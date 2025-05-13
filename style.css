@@ -2,14 +2,17 @@
 	box-sizing: border-box;
   }
   
-  body {
+  html, body {
 	font-family: Arial, sans-serif;
 	background-color:rgb(245, 245, 220); /* Beige tone */
 	color: #333;
+	height:100%;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
   }
+
+
   
   /* Header */
   .header-content {
@@ -19,6 +22,8 @@
 	padding: 1rem;
 	background-color: #293746;
 	color: #fff;
+	  border-bottom-left-radius: 10px;
+	  border-bottom-right-radius: 10px;
   }
   
   .contact-link {
@@ -49,7 +54,7 @@
   }
   
   .modal-content {
-	background-color: #fff;
+	background-color: rgb(231, 229, 201);
 	padding: 2rem;
 	border-radius: 10px;
 	max-width: 500px;
@@ -69,25 +74,31 @@
   
   /* Lägg till luft mellan header och main */
   main {
+	flex:1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100vw; /* Täcker hela sidans bredd */
-	height: 500px; /* Täcker hela sidans höjd */
+	width: 400px;
+	/* width: 100vw; Täcker hela sidans bredd */
+	height:auto; /* Täcker hela sidans höjd */
 	background-color: #283441;
-	/* Luft mellan header och main */
+	/* border-top-right-radius: 50%;
+	border-bottom-right-radius:50%; */
+	border-radius: 5%;
+	margin-top:50px;
+	margin-left:5px;
   }
   
   
   /* Main Content */
   .main-content {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
+	/* gap: 2rem; */
 	width: 100%;
-	max-width: 1200px;
+	max-width: 400px;
 	margin: 0 auto
   }
   
@@ -101,13 +112,15 @@
   }
   
   .image-section img {
-	width: 300px; /* Fast bredd för bilden */
+	width: 100px; /* Fast bredd för bilden */
 	height: auto; /* Behåll proportionerna */
 	border-radius: 10px;
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
+	margin-top:1rem;
 	border: 1px solid #ccc;
 	border-radius: 10px;
-	transition: transform 0.3s, background-color 0.3s;
+	/* transition: transform 0.3s, background-color 0.3s; */
+
   }
   
   .image-section h2 {
@@ -179,15 +192,67 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	max-width:600px;
+	max-width:350px;
 	margin: 0 auto;
-	padding: 2rem;
+	padding: 1rem;
 	color:rgba(76, 148, 88, 0.814);
 
 
   }
 
   .social-links img[src$=".svg"] {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
   }
+
+
+  @media (max-width: 768px) {
+	.header-content {
+	  flex-direction: column; /* Stapla innehållet vertikalt */
+	  text-align: center;
+	}
+  
+	.contact-link {
+	  margin-top: 1rem; /* Lägg till mellanrum ovanför länken */
+	  padding: 0.5rem;
+	  font-size: 0.9rem;
+	}
+  }
+  @media (max-width: 768px) {
+	.main-content {
+	  flex-direction: column; /* Stapla bild och text vertikalt */
+	  align-items: center;
+	}
+  
+	.image-section img {
+	  width: 80%; /* Gör bilden responsiv */
+	  max-width: 300px; /* Begränsa maxbredden */
+	}
+  
+	.text-section {
+	  padding: 1rem;
+	  text-align: center; /* Centrera texten */
+	}}
+	@media (max-width: 768px) {
+		.links-section {
+		  grid-template-columns: 1fr; /* En kolumn */
+		  gap: 1rem; /* Mindre mellanrum */
+		}
+	  
+		.link-box {
+		  width: 100%; /* Gör länkarna fullbredd */
+		  max-width: 300px; /* Begränsa maxbredden */
+		  margin: 0 auto; /* Centrera länkarna */
+		}
+	  }
+	  @media (max-width: 768px) {
+		footer {
+		  text-align: center;
+		  padding: 1rem;
+		}
+	  
+		.footer-links a img {
+		  width: 24px; /* Minska storleken på ikoner */
+		  height: 24px;
+		}
+	  }
