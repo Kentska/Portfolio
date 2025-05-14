@@ -1,0 +1,84 @@
+.main-content-wrapper {
+	flex:1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	/* width: 100vw; Täcker hela sidans bredd */
+	height:auto; /* Täcker hela sidans höjd */
+	background-color: #283441;
+	/* border-top-right-radius: 50%;
+	border-bottom-right-radius:50%; */
+	border-radius: 5%;
+	margin-top:50px;
+	margin-left:5px;
+	box-shadow: 0 4px 8px rgba(82, 149, 5, 0.692);
+  }
+  
+  
+  /* Main Content */
+  .main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* gap: 2rem; */
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto
+  }
+  
+  /* Bildsektion */
+  .image-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%; /* Fast bredd för bildsektionen */
+  }
+  
+  .image-section img {
+	width: 100px; /* Fast bredd för bilden */
+	height: auto; /* Behåll proportionerna */
+	border-radius: 10px;
+	/* margin-bottom: 1rem; */
+	margin-top:1rem;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	/* transition: transform 0.3s, background-color 0.3s; */
+
+  }
+  
+  .image-section h2 {
+	margin: 0;
+	font-size: 1.5rem;
+	color: rgba(76, 148, 88, 0.814);
+	text-align: center;
+  }
+  
+  /* Links Section */
+  .links-section {
+	display: grid;
+	grid-template-columns: repeat(2, 200px); /* Två kolumner */
+	gap: 2rem; /* Generöst mellanrum mellan boxarna */
+	justify-content: center;
+	padding: 2rem;
+	background-color: rgb(245, 245, 220); /* Vit bakgrund för länkar */
+  }
+  
+  .link-box {
+	width: 200px;
+	height: 200px;
+	background-color: #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .link-box:hover {
+	transform: scale(1.05);
+	background-color: #bbb;
+  }
