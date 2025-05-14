@@ -16,9 +16,9 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
         <p><strong>Email:</strong> <a href="mailto:kentska@hotmail.com">kentska@hotmail.com</a></p>
         <p><strong>Location:</strong> Norrtälje, Sweden</p>
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/kentskarnas/" target="_blank" rel="noopener noreferrer"><img src="icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href="https://www.instagram.com/bowmorez" target="_blank" rel="noopener noreferrer"><img src="icons/instagram.svg" alt="Instagram" /></a>
-          <a href="https://www.github.com/Kentska" target="_blank" rel="noopener noreferrer"><img src="icons/github.svg" alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/kentskarnas/" target="_blank" rel="noopener noreferrer"><img src="linkedin.svg" alt="LinkedIn" /></a>
+          <a href="https://www.instagram.com/bowmorez" target="_blank" rel="noopener noreferrer"><img src="instagram.svg" alt="Instagram" /></a>
+          <a href="https://www.github.com/Kentska" target="_blank" rel="noopener noreferrer"><img src="github.svg" alt="GitHub" /></a>
         </div>
       </div>
     </div>
