@@ -1,14 +1,10 @@
 .main-content-wrapper {
-	flex:1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 400px;
-	/* width: 100vw; Täcker hela sidans bredd */
-	height:auto; /* Täcker hela sidans höjd */
+	max-height:500px; /* Täcker hela sidans höjd */
 	background-color: #283441;
-	/* border-top-right-radius: 50%;
-	border-bottom-right-radius:50%; */
 	border-radius: 5%;
 	margin-top:50px;
 	margin-left:5px;

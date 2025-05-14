@@ -1,3 +1,19 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  footer {
+	margin-top: auto;
+  }
+
 .navbar {
 display: flex;
  gap: 1rem;
