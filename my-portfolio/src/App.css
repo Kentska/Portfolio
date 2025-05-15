@@ -19,3 +19,9 @@ display: flex;
  gap: 1rem;
   padding: 1rem;
 }
+.main-layout {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center; /* eller center om du vill centrera vertikalt */
+	gap: 15rem; /* avstånd mellan boxarna */
+  }

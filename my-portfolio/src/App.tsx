@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import Modal from "./components/Modal";
+import LinksSection from "./components/LinksSection";
 import "./App.css"; // Import your CSS file
 
 const App: React.FC = () => {
@@ -22,7 +23,11 @@ const App: React.FC = () => {
       <Link to="/contact">Contact</Link>
     </nav>
     <Routes>
-      <Route path="/" element={<MainContent />} />
+      <Route path="/" element={
+		<div className="main-layout">
+			<MainContent />
+			<LinksSection />
+			</div>} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
