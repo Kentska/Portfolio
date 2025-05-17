@@ -1,18 +1,20 @@
 .links-section {
 	display: grid;
-	grid-template-columns: repeat(2, 300px); /* Två kolumner */
-	gap: 2rem; /* Generöst mellanrum mellan boxarna */
+	grid-template-columns: repeat(6, 100px); /* Två kolumner */
+	gap: 10rem; /* Generöst mellanrum mellan boxarna */
 	justify-content: center;
+	margin-left: auto;          /* centrera hela grid:en i containern */
+  	margin-right: auto;
 	padding: 2rem;
-	background-color: rgb(12, 12, 6); /* Vit bakgrund för länkar */
+	/* margin-top: 1rem; */
+	background-color: rgb(245, 245, 220);/* Vit bakgrund för länkar */
   }
   
   .link-box {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background-color: #ddd;
 	display: flex;
-	flex-direction: column; /* så att text och bild staplas */
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #ccc;
@@ -43,4 +45,19 @@
   .link-box:hover span,
   .link-box:hover .link-text {
 	display: none; /* dölj texten vid hover om du vill */
+  }
+
+  .link-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width:200px;
+  }
+  
+  .box-caption {
+	margin-top: 0.5rem;
+	color: black;
+	text-align: center;
+	font-size: 1rem;
+
   }

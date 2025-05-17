@@ -1,0 +1,18 @@
+.info-panel {
+	width: 1000px;
+	min-height: 600px;
+	background: #f5f5dc;
+	border-radius: 12px;
+	/* box-shadow: 0 4px 16px rgba(60,60,60,0.12); */
+	box-shadow: 0 4px 24px #333;
+	padding: 2rem;
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  
+  .info-panel-content {
+	margin-top: 1rem;
+	width: 100%;
+  }
